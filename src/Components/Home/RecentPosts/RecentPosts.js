@@ -81,7 +81,7 @@ export default class RecentPosts extends React.Component{
   render(){
     var Posts = this.state.blog.map((post) =>{
         return (
-              <div  className="col-sm-5 RecentPosts_Title_content"  key={post._id}>
+              <div  className="col-sm-6 RecentPosts_Title_content"  key={post._id}>
                 <div className="RecentPosts_Title_content_img">
                   <Link to={`/layoutDetail/${post._id}`}><img src={post.image_url}/></Link>
                   <h3>
@@ -99,7 +99,7 @@ export default class RecentPosts extends React.Component{
     return(
       <div className="">
         <div className="row">
-          <div className="col-sm-10 text-left hidden-xs RecentPosts_Title_img">
+          <div className="text-left hidden-xs RecentPosts_Title_img">
             <img src="../../images/RecentPosts.png"/>
           </div>
           <div className="col-sm-10 text-center visible-xs RecentPosts_Title_img_mobile">
