@@ -65,7 +65,7 @@ export default class Scholarship extends React.Component{
         <div id="myModal" className="modal">
           <div className="modal-content">
             <p className="modal-title opensans" id="thong_bao"></p>
-            <div className="g-recaptcha" data-sitekey="6LfWQyYTAAAAANnAOhP9dZoXUe8UMT2qxMCH1rn4" id="rcaptcha"></div>
+            <div className="g-recaptcha" data-sitekey="6LemYygTAAAAALoCU-8mgkR5E5EVM3NLgkGdBOoB" id="rcaptcha"></div>
             <button id="compelete" className="btn per">Hoàn thành</button>
           </div>
         </div>
