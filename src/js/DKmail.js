@@ -9,7 +9,7 @@ $(document).ready(function() {
   }
 
 
-  $('#formdk').on('submit', function(e) {
+  $('#form-dk').on('submit', function(e) {
     // Prevent form submission
     e.preventDefault();
     $('#thong_bao').empty();
@@ -31,7 +31,7 @@ $(document).ready(function() {
       console.log("yes");
         var url = 'https://script.google.com/macros/s/AKfycbzPEZPmNLtjrg4D6Ukopfo6OMQAnNgzOGmIQt1jtRjbgCePJmPH/exec';
 
-      var jqxhr = $.post(url, $('#formdk').serialize(), function(data) {
+      var jqxhr = $.post(url, $('#form-dk').serialize(), function(data) {
           grecaptcha.reset();
           captcha.style.display = "none";
           button_complete.style.display = "none";
