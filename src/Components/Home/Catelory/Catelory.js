@@ -101,7 +101,7 @@ export default class Catelory extends React.Component{
               <h4>Muốn đọc nhiều hơn nhưng bài viết hay từ Techkids?</h4>
               <p>Đăng ký theo dõi nhé!</p>
               <input type="Email" id="id_email" className="Scholarship_input" placeholder="Địa Chỉ Email..." name='Địa chỉ mail'/>
-              <button className="register" id="submit_button"><span id="submit_text">Đăng Ký</span></button>
+              <button  id="submit_button"><span id="submit_text">Đăng Ký</span></button>
             </div>
           </form>
           <div id="myModal" className="modal">
