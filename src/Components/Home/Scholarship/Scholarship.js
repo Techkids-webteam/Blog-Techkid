@@ -46,12 +46,12 @@ export default class Scholarship extends React.Component{
       $("#fade-out").fadeOut(800);
     });
   })
-  
+
 }
   render(){
     return (
       <div>
-        <form method="GET" action="#" id="form-dk">
+        <form method="POST" action="#" id="form-dk">
           <div id ="fade-out" className="sticky_bottom_footer hidden-xs hidden-sm hidden-md">
             <div className="container">
               <button type="button" id="close">×</button>
