@@ -165,7 +165,7 @@ body{
 	border-bottom: 1px solid #00a1ed;
 }
 
- footer.footer{
+footer.footer{
 	margin-top: 90px;
 	font-size: 1.4rem;
 	margin-bottom: 20px;
@@ -326,6 +326,11 @@ body{
 }
 .per{
   margin: 0 auto;
+  background-color: #f47930;
+  color: #ffffff;
+}
+.per:hover{
+  color: #000000;
 }
 .modal {
   display: none; /* Hidden by default */
