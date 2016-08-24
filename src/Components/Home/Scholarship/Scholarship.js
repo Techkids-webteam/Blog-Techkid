@@ -46,6 +46,8 @@ export default class Scholarship extends React.Component{
       $("#fade-out").fadeOut(800);
     });
   })
+}
+componentDidUpdate(){
   $(document).ready(function() {
     var captcha = document.getElementById('rcaptcha');
     var button_complete = document.getElementById('compelete');
@@ -55,7 +57,6 @@ export default class Scholarship extends React.Component{
         modal.style.display = "none";
       }
     }
-
 
     $('#form-dk').on('submit', function(e) {
       // Prevent form submission
@@ -98,9 +99,7 @@ export default class Scholarship extends React.Component{
       }
 
     });
-
   });
-
 }
   render(){
     return (
