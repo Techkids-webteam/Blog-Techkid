@@ -1,0 +1,388 @@
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+	background-color: #f6f6f6;
+}
+.ilat_content_block{
+  	padding: 0px 20px;
+}
+#home .black_bg{
+	background: #000000;
+}
+#home #header{
+	border-bottom: 1px solid #000000;
+	margin: 0;
+}
+#home .navbar-brand img{
+  max-height: 31px;
+  width: auto;
+}
+.Header {
+  padding-right: 40px;
+}
+
+#home .header_icon{
+	margin: 0;
+	min-height: 30px;
+}
+#home .header_icon button{
+	font-size: 20px;
+	margin: 0;
+	padding-top: 17px;
+}
+.home_header li a{
+	color: #f0eded;
+}
+#header_nav ul li a{
+  color: ffffff;
+}
+.home_header li a:hover{
+	color: #ffffff;
+  background-color: #000000;
+}
+#home .header_menu_list{
+	padding-left: 20px;
+	font-size: 1.8rem;
+}
+#home .header_dropdown_list{
+	border-top:1px solid #000000;
+}
+#home .white_bg{
+	background: #ffffff;
+}
+
+#home .Home_Title{
+	margin-top: 50px;
+}
+#home .Home_Title h1{
+	font-weight: 800;
+	font-family:'Open Sans', sans-serif;
+}
+#home .Home_Title h3{
+	font-weight: 800;
+	font-family:'Open Sans', sans-serif;
+}
+#home .NewPost{
+  margin-top: 20px;
+}
+#home .NewPost_img{
+  margin-top: 30px;
+}
+#home .NewPost_Title{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+ .NewPost img{
+  max-width: 100%;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+#home .NewPost_content{
+	border-top: 1px solid #00a1ed;
+}
+#home .NewPost_content_posts{
+	margin-top: 10px;
+}
+#home .NewPost_content_posts img{
+	margin: 0 auto;
+}
+#home .RecentPosts_Title_img{
+	border-bottom: 1px solid #00a1ed;
+}
+#home .RecentPosts_Title_content{
+	margin-top: 50px;
+}
+#home .RecentPosts{
+  text-align: left;
+}
+#home #pagination{
+  cursor: pointer;
+}
+#home .Catolary_Title_User{
+	border-top: 1px solid #00a1ed;
+	padding: 10px 40px;
+	max-width: 94%;
+}
+#home .Catolary_Title img{
+	max-width: 45%;
+  margin-top: 15px;
+}
+
+.catogory p a{
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+}
+.catogory p{
+  text-align: center;
+}
+
+#home .Catolary_from_register{
+	background: #00a1ed;
+	text-align: center;
+	padding: 25px 15px;
+  color: #ffffff;
+}
+#home .Catolary_from_register input{
+  color: #000000;
+  max-width: 100%;
+}
+#home .Catolary_from_register button{
+	background-color: #ff803c;
+	margin-top: 10px;
+	border: 0 none;
+	border: 1px solid #ff803c;
+}
+#home .Catolary_from_register button:hover{
+	color: #ff803c;
+	border: 1px solid #ff803c;
+	background-color: #ffffff;
+}
+#home .RecentPosts_Title_img_mobile img {
+	margin-left: 15px;
+}
+#home .RecentPosts_Title_content{
+  display: inline-block;
+  float: none;
+}
+
+#home .RecentPosts_Title_content_img a img{
+	max-width: 100%;
+}
+#home .RecentPosts_Title_content_img {
+
+}
+#home .RecentPosts_Title_img_mobile{
+	border-bottom: 1px solid #00a1ed;
+}
+
+ footer.footer{
+	margin-top: 90px;
+	font-size: 1.4rem;
+	margin-bottom: 20px;
+}
+.imes{
+  font-size: 3rem;
+  position: relative;
+  top:4px;
+}
+#home .footer_logo{
+    margin: 15px 10px;
+    max-width: 90%;
+}
+
+#home .footer h5{
+	font-size: 1.8rem;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+#home .footer ul{
+	padding-left: 20px;
+}
+
+#home .footer .socials_list{
+    font-size: 2.3rem;
+}
+
+#home .socials_list a:hover, .socials_list a:focus {
+    color: #000;
+    text-decoration: none;
+}
+#home .socials_list a {
+    color: #333;
+}
+#home .footer_text h5{
+	text-align: left;
+}
+#home .footer_text ul li{
+	text-align: left;
+}
+#home .footer_text p{
+	text-align: left;
+}
+#home .scrollToTop{
+	text-align:center;
+	background-color:#00b3f6;
+	font-weight: bold;
+	color: #f8f8f8;
+	position:fixed;
+	top:430px;
+	right:40px;
+    border-radius: 100%;
+    display: none;
+    border: none;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+    font-size: 3rem;
+}
+
+#home .scrollToTop:focus{
+    outline: 0 none;
+}
+
+#home .scrollToTop:hover{
+	text-decoration:none;
+}
+.sticky_bottom_footer .container{
+    padding: 1px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #f6efef;
+
+}
+.container h4{
+  font-size: 1.2rem;
+}
+#home .sticky_bottom_footer h4{
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 2%;
+    font-weight: bold;
+    padding: 1%;
+}
+
+.register{
+    background-color: #f05c1e;
+   	font-size: 1.8rem;
+   	padding: 3px 25px;
+    color: white;
+    font-weight: lighter;
+    border-radius: 4px;
+    border: 1px solid #f05c1e;
+    margin-left: 10px;
+
+}
+
+#home .register:hover{
+    color: #f05c1e;
+    background-color: #ffffff;
+    border: 1px solid #f05c1e;
+}
+
+#home .sticky_bottom_footer #close{
+    float: right;
+    color:white;
+    font-weight: 900;
+    font: arial;
+    background-color: #F05C1E;
+    border: 0px;
+}
+#home .container{
+  z-index: 100;
+}
+#home .mobile_bottom_footer .container{
+    text-align: center;
+    background-color: #f6efef;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.Scholarship_input{
+	line-height: 25px;
+}
+.slick-slide:focus{
+  outline: 0 none;
+}
+
+.slick-dots{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.slick-dots li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.slick-dots li button{
+  border: 0 none;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #4d4d4d;
+  display: block;
+  font-size: 0;
+}
+
+#home .slick-dots li.slick-active button,
+#home .slick-dots li button:active{
+  background: #6eb4b8;
+}
+.per{
+  margin: 0 auto;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 45%; /* Could be more or less, depending on screen size */
+  border-radius: 15px;
+  border: 5px solid #f47930;
+  text-align: center;
+}
+
+.modal-title{
+  line-height: 30px;
+  color: #3bb4d2;
+  font-weight: 600;
+}
+
+.g-recaptcha{
+  margin: 0 auto;
+  width: 304px;
+}
+@media screen and (min-width: 768px){
+#home #header{
+	border: 0 none;
+}
+.row{
+  margin-right: 0;
+}
+#home .header_menu_list{
+	padding-left: 140px;
+	font-size: 1.8rem;
+}
+.header_menu_list ul li a{
+	color: #737373;
+}
+.header_menu_list ul li a:hover{
+  background-color: #ffffff;
+  color: #5c67fc;
+}
+#home .RecentPosts_Title_img img{
+	max-width: 45%;
+}
+#home .Catolary_Title img{
+  max-width: 45%;
+}
+}

@@ -1,0 +1,303 @@
+*:after{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+	background-color: #f6f6f6;
+}
+#detail .home_header li a{
+	color: #f0eded;
+}
+#detail .home_header li a:hover{
+	color: #ffffff;
+  background-color: #000000;
+}
+#detail .black_bg{
+	background: #000000;
+}
+#detail .white_bg{
+	background: #ffffff;
+
+}
+#detail .header_icon{
+	margin: 0;
+	min-height: 30px;
+}
+#detail .header_icon button{
+	font-size: 20px;
+	margin: 0;
+	padding-top: 17px;
+}
+#detail .navbar-brand img{
+  max-height: 31px;
+  width: auto;
+}
+#detail .header_menu_list{
+	padding-left: 20px;
+	font-size: 1.8rem;
+}
+#detail .Catolary_Title img{
+	max-width: 6em;
+}
+#detail .Catolary_Title{
+	padding-left: 90px;
+}
+#detail .Catolary_from_register{
+	background: #00a1ed;
+	text-align: center;
+	padding: 25px 15px;
+  color: #ffffff;
+}
+#detail .Catolary_from_register input{
+  color: #000000;
+}
+#detail .Catolary_Title_User{
+	border-top: 1px solid #00a1ed;
+	padding: 10px 0;
+	max-width: 94%;
+}
+
+#detail .Catolary_from_register button{
+	background-color: #ff803c;
+	margin-top: 10px;
+	border: 0 none;
+	border: 1px solid #ff803c;
+}
+#detail .Catolary_from_register input{
+	max-width: 100%;
+}
+#detail .Catolary_from_register button:hover{
+	color: #ff803c;
+	border: 1px solid #ff803c;
+	background-color: #ffffff;
+}
+#detail .PageRecentCatolary{
+	margin-top: 10px;
+}
+#detail .circle p{
+	position:relative;
+	left: 10px;
+	top: 10px;
+}
+#detail .Detail_human li {
+	white-space: nowrap;
+}
+#detail .Detail_human img{
+	float: left;
+	margin-bottom: 10px;
+}
+
+#detail .list_socical{
+	margin: 0;
+    padding: 0;
+    min-height: 20px
+}
+#detail .list_socical i{
+	font-size: 22px;
+	text-align: left;
+}
+#detail .twitter{
+	color: #00a1ed;
+}
+#detail .google{
+	color: #ed0006;
+	margin: 0 5px 0 5px;
+}
+#detail .facebook{
+	color: #007bed;
+}
+#detail .Detail_content img{
+  max-width: 100%;
+}
+#detail .NewPost {
+    margin-top: 20px;
+}
+
+#detail .NewPost img{
+  max-width: 100%;
+}
+#detail .Detail_content{
+	border-top: 1px solid #000000;
+}
+#detail .Detail_content_in{
+	margin-top: 10px;
+}
+#detail .Detail_content_in p{
+	text-align: left;
+	margin-top: 10px;
+}
+#detail .Detail_content_Noteimg p{
+	text-align: center;
+}
+#detail .Detail_content_img3{
+	margin-top: 30px;
+}
+#detail .Detail_content_img3 img{
+	float: left;
+	margin-right: 10px;
+	max-width: 60%;
+}
+#detail .NewPost_Title{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+#detail .NewPost_content{
+	border-top: 1px solid #00a1ed;
+}
+#detail .NewPost_content_posts{
+	margin-top: 10px;
+}
+#detail .NewPost_content_posts img{
+	margin: 0 auto;
+}
+
+
+#detail .footer_logo{
+    margin: 15px 10px;
+    max-width: 90%;
+}
+
+#detail .footer h5{
+	font-size: 1.8rem;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+#detail .footer ul{
+	padding-left: 20px;
+}
+
+#detail .footer .socials_list{
+    font-size: 2.3rem;
+}
+
+#detail .socials_list a:hover, .socials_list a:focus {
+    color: #000;
+    text-decoration: none;
+}
+#detail .socials_list a {
+    color: #333;
+}
+#detail .footer_text h5{
+	text-align: left;
+}
+#detail .footer_text ul li{
+	text-align: left;
+}
+#detail .footer_text p{
+	text-align: left;
+}
+#detail .scrollToTop{
+	text-align:center;
+	background-color:#00b3f6;
+	font-weight: bold;
+	color: #f8f8f8;
+	position:fixed;
+	top:430px;
+	right:40px;
+    border-radius: 100%;
+    display: none;
+    border: none;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+    font-size: 3rem;
+}
+
+#detail .scrollToTop:focus{
+    outline: 0 none;
+}
+
+#detail .scrollToTop:hover{
+	text-decoration:none;
+}
+
+
+#detail .sticky_bottom_footer h4{
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 2%;
+    font-weight: bold;
+    padding: 1%;
+}
+
+#detail .register:hover{
+    color: #f05c1e;
+    background-color: #ffffff;
+    border: 1px solid #f05c1e;
+}
+
+#detail .sticky_bottom_footer #close{
+    float: right;
+    color:white;
+    font-weight: 900;
+    font: arial;
+    background-color: #F05C1E;
+    border: 0px;
+}
+
+#detail .mobile_bottom_footer .container{
+    text-align: center;
+    background-color: #f6efef;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.slick-slide:focus{
+  outline: 0 none;
+}
+
+.slick-dots{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.slick-dots li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.slick-dots li button{
+  border: 0 none;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #4d4d4d;
+  display: block;
+  font-size: 0;
+}
+
+#detail .slick-dots li.slick-active button,
+#detail .slick-dots li button:active{
+  background: #6eb4b8;detail
+  Ơ
+ }
+@media screen and (min-width: 1024px){
+#detail .PageRecentCatolary{
+	margin-top: 50px;
+}
+#detail #header{
+	border: 0 none;
+}
+#detail .header_menu_list{
+	padding-left: 140px;
+	font-size: 1.8rem;
+}
+
+#detail .Catolary_Title img{
+	max-width: 8em;
+}
+#detail .list_socical {
+	font-size: 22px;
+	text-align: right;
+}
+
+
+}

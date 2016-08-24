@@ -1,1 +1,1 @@
-# Blog-Techkid
+# Techkid-blog
