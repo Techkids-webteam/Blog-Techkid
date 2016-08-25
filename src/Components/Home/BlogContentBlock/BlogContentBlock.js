@@ -6,7 +6,7 @@ export default class BlogContentBlock extends React.Component{
       <section className={'ilat_content_block ' +  this.props.background}>
           <div className="container">
             <div className="row">
-              <div className="col-sm-12 text-center ">
+              <div className="col-sm-11 text-center ">
                 {this.props.children}
               </div>
             </div>

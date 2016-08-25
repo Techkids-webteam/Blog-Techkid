@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonFacebook from "../ButtonFacebook/ButtonFacebook";
 import { IndexLink, Link, withRouter } from "react-router";
 export default class NewPost extends React.Component{
   constructor(){
@@ -45,10 +46,17 @@ export default class NewPost extends React.Component{
   }
 
   render(){
+    var date ;
+    var shortTime ;
+    var shortDate;
     var Posts = this.state.blog.map((post) =>{
+      date = new Date(post.createdAt);
+      shortTime = date.toLocaleTimeString().toLowerCase().replace(/([\d]+:[\d]+):[\d]+(\s\w+)/g, "$1$2");
+      shortDate = (date.getMonth() + 1) + "-" +  date.getDate() + "-" +  date.getFullYear();
+
       return (
           <div className="NewPost" key={post._id}>
-            <div className="col-sm-12">
+            <div className="col-sm-12 NewPost_content_title">
                   <Link to={`/layoutDetail/${post._id}`}><img src={post.image_url}/></Link>
                   <h3>
                   <Link to={`/layoutDetail/${post._id}`}>{post.title}</Link>
@@ -56,21 +64,25 @@ export default class NewPost extends React.Component{
                   <p>
                     {post.content.substring(0,200)}
                   </p>
+                  <ButtonFacebook/>
+                  <p className="NewPost_category">{post.category} | {shortDate + " " + shortTime}</p>
             </div>
+
           </div>
       )
     })
     return (
       <div className="NewPost_Title" >
           <div className="row">
-            <div className="col-sm-12">
+            <div className=" col-sm-12">
               <img className="text-center" src="../../images/titleblock.png"/>
             </div>
           </div>
           <div className="NewPost_content">
             <div className="row" id="slick_slider">
-              {Posts}
+                {Posts}
             </div>
+
           </div>
       </div>
     )

@@ -86,7 +86,7 @@ export default class RecentPosts extends React.Component{
                   <Link to={`/layoutDetail/${post._id}`}><img src={post.image_url}/></Link>
                   <h3>
                       <Link to={`/layoutDetail/${post._id}`}>
-                      {post.title.substring(0,60) + "..."}
+                      {post.title.substring(0,76) + "..."}
                     </Link>
                   </h3>
                   <p>

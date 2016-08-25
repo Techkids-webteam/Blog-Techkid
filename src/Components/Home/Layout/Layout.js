@@ -20,7 +20,7 @@ export default class Layout extends React.Component{
         <BlogContentBlock><Title/></BlogContentBlock>
         <BlogContentBlock><NewPost/></BlogContentBlock>
         <BlogContentBlock><PageRecentCatolary/></BlogContentBlock>
-        <BlogContentBlock background="white_bg"><Footer/></BlogContentBlock>
+        <Footer/>
         <Scholarship/>
         <ScrollToTop/>
       </div>

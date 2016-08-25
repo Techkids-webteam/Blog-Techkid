@@ -79,6 +79,9 @@ body{
 #home .NewPost{
   margin-top: 20px;
 }
+.NewPost_category{
+  margin-top: 10px;
+}
 #home .NewPost_img{
   margin-top: 30px;
 }
@@ -98,6 +101,17 @@ body{
 }
 #home .NewPost_content_posts{
 	margin-top: 10px;
+}
+#home .NewPost_content_title h3 a{
+  font-size: 2rem;
+  color: #000000;
+  text-decoration: none;
+}
+#home .NewPost_content_title p{
+  font-size: 1.3rem;
+}
+#home .NewPost_content_title{
+  text-align: left;
 }
 #home .NewPost_content_posts img{
 	margin: 0 auto;
@@ -168,7 +182,19 @@ body{
 	max-width: 100%;
 }
 #home .RecentPosts_Title_content_img {
-
+  text-align: left;
+}
+ .RecentPosts_Title_content_img h3 a{
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000000;
+}
+ .RecentPosts_Title_content_img h3 a:hover{
+  color: #cccccc;
+}
+ .RecentPosts_Title_content_img p{
+  font-size: 1.4rem;
+  word-wrap: break-word;
 }
 #home .RecentPosts_Title_img_mobile{
 	border-bottom: 1px solid #00a1ed;
@@ -178,6 +204,7 @@ footer.footer{
 	margin-top: 65px;
 	font-size: 1.4rem;
 	margin-bottom: 20px;
+  background-color: #ffffff;
 }
 .imes{
   font-size: 3rem;
@@ -396,6 +423,10 @@ footer.footer{
 }
 #home .RecentPosts_Title_img img{
 	max-width: 45%;
+}
+.ilat_content_block{
+  	padding: 0px 20px;
+    margin-left: 100px;
 }
 
 }
