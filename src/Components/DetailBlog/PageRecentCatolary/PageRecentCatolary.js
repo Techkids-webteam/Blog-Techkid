@@ -27,7 +27,7 @@ export default class PageRecentCatolary extends React.Component{
             <div className="col-sm-9">
               <Detail {...this.props.post}/>
             </div>
-            <div className=" col-sm-3 text-right">
+            <div className=" col-sm-3 text-right PageRecentCatolary_catogory">
               <Catelory/>
             </div>
 

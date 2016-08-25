@@ -288,9 +288,8 @@ body{
 	padding-left: 140px;
 	font-size: 1.8rem;
 }
-
-#detail .Catolary_Title img{
-	max-width: 45%;
+#detail .PageRecentCatolary_catogory{
+  margin-top: 180px;
 }
 #detail .list_socical {
 	font-size: 22px;
