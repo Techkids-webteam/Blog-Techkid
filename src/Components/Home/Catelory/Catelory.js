@@ -86,7 +86,7 @@ export default class Catelory extends React.Component{
     return (
       <div className="">
           <div className="row">
-            <div className="col-sm-11 hidden-xs Catolary_Title">
+            <div className="hidden-xs Catolary_Title">
               <img src="../../images/catolory.png"/>
             </div>
             <div className="col-sm-12 visible-xs text-center ">
