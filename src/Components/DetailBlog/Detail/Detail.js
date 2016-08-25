@@ -19,7 +19,7 @@ export default class Detail extends React.Component{
     return (
         <div className="">
           <div className="row">
-            <div className="col-sm-11 text-left">
+            <div className="col-sm-12 text-left">
                 <h1>{this.props.title}</h1>
                 <p>{this.props.category} | {shortDate + " " + shortTime}</p>
 
@@ -43,7 +43,7 @@ export default class Detail extends React.Component{
                   </div>
                 </div>
 
-                <div className="col-sm-10 Detail_content">
+                <div className="col-sm-12 Detail_content">
                   <h2>{this.props.title}</h2>
                   <img src={this.props.image_url}/>
                   <p dangerouslySetInnerHTML={this.rawMarkup(this.props.content)}></p>

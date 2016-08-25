@@ -24,10 +24,10 @@ export default class PageRecentCatolary extends React.Component{
       console.log(this.props)
       return (
           <div className="row PageRecentCatolary">
-            <div className="col-sm-8">
+            <div className="col-sm-9">
               <Detail {...this.props.post}/>
             </div>
-            <div className=" col-sm-4 text-right">
+            <div className=" col-sm-3 text-right">
               <Catelory/>
             </div>
 

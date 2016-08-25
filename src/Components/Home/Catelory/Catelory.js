@@ -86,18 +86,18 @@ export default class Catelory extends React.Component{
     return (
       <div className="">
           <div className="row">
-            <div className="hidden-xs Catolary_Title">
+            <div className="col-sm-12 hidden-xs Catolary_Title">
               <img src="../../images/catolory.png"/>
             </div>
             <div className="col-sm-12 visible-xs text-center ">
               <img  src="../../images/catoloryMobile.png"/>
             </div>
           </div>
-          <div className="col-sm-offset-4 col-sm-8 Catolary_Title_User">
+          <div className="col-sm-12 Catolary_Title_User">
             {Posts}
           </div>
           <form method="POST" action="#" id="formdk">
-            <div className="col-sm-offset-4 col-sm-8  hidden-xs Catolary_from_register">
+            <div className="col-sm-12  hidden-xs Catolary_from_register">
               <h4>Muốn đọc nhiều hơn nhưng bài viết hay từ Techkids?</h4>
               <p>Đăng ký theo dõi nhé!</p>
               <input type="Email" id="id_email" className="Scholarship_input" placeholder="Địa Chỉ Email..." name='Địa chỉ mail'/>
