@@ -8,7 +8,7 @@ export default class PageRecentCatolary extends React.Component{
           <div className="col-sm-8">
             <RecentPosts />
           </div>
-          <div className=" col-sm-4 text-right">
+          <div className="col-sm-offset-1 col-sm-3 text-right">
             <Catelory/>
           </div>
 

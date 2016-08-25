@@ -109,11 +109,10 @@ body{
 #catogory .Catolary_Title_User{
 	border-top: 1px solid #00a1ed;
 	padding: 10px 40px;
-	max-width: 94%;
+	max-width: 100%;
 }
 #catogory .Catolary_Title img{
-	max-width: 45%;
-  margin-top: 15px;
+	max-width: 75%;
 }
 
 #catogory .Catolary_from_register{
@@ -268,7 +267,5 @@ body{
 #catogory .RecentPosts_Title_img img{
 	max-width: 45%;
 }
-#catogory .Catolary_Title img{
-  max-width: 45%;
-}
+
 }

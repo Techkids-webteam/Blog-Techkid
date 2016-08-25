@@ -117,11 +117,11 @@ body{
 #home .Catolary_Title_User{
 	border-top: 1px solid #00a1ed;
 	padding: 10px 40px;
-	max-width: 94%;
+	max-width: 100%;
 }
 #home .Catolary_Title img{
-	max-width: 45%;
-  margin-top: 15px;
+	max-width: 75%;
+  margin-top: 10px;
 }
 
 .catogory p a{
@@ -176,7 +176,7 @@ body{
 }
 
 footer.footer{
-	margin-top: 90px;
+	margin-top: 65px;
 	font-size: 1.4rem;
 	margin-bottom: 20px;
 }
@@ -398,7 +398,5 @@ footer.footer{
 #home .RecentPosts_Title_img img{
 	max-width: 45%;
 }
-.Catolary_Title img{
-  max-width: 45%;
-}
+
 }
