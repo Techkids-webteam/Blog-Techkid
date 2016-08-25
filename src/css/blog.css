@@ -129,6 +129,9 @@ body{
   text-decoration: none;
   text-align: center;
 }
+.catogory p a:hover{
+  color: #337ab7;
+}
 .catogory p{
   text-align: center;
 }
@@ -325,6 +328,7 @@ footer.footer{
   background: #4d4d4d;
   display: block;
   font-size: 0;
+  outline: 0 none;
 }
 
 #home .slick-dots li.slick-active button,
@@ -394,7 +398,7 @@ footer.footer{
 #home .RecentPosts_Title_img img{
 	max-width: 45%;
 }
-#home .Catolary_Title img{
+.Catolary_Title img{
   max-width: 45%;
 }
 }

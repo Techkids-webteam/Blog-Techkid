@@ -42,9 +42,7 @@ body{
 #detail .Catolary_Title img{
 	max-width: 6em;
 }
-#detail .Catolary_Title{
-	padding-left: 90px;
-}
+
 #detail .Catolary_from_register{
 	background: #00a1ed;
 	text-align: center;
@@ -292,7 +290,7 @@ body{
 }
 
 #detail .Catolary_Title img{
-	max-width: 8em;
+	max-width: 45%;
 }
 #detail .list_socical {
 	font-size: 22px;
