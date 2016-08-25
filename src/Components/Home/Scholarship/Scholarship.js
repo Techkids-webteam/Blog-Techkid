@@ -23,6 +23,7 @@ export default class Scholarship extends React.Component{
     });
 
     $('#compelete').on('click', function(a) {
+
       var v = grecaptcha.getResponse();
       console.log(v);
       if (v.length == 0) {
@@ -44,11 +45,12 @@ export default class Scholarship extends React.Component{
             console.warn("Error! Data: " + data.statusText);
             // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
             if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+              //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
+
             }
           });
       }
-
-    });
+    })
     $(window).scroll(function(event) {
 
     // height of the document (total height)

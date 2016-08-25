@@ -32,7 +32,7 @@ export default class Catelory extends React.Component{
       }
     }
 
-    $('#form-dk').on('submit', function(e) {
+    $('#formdk').on('submit', function(e) {
       // Prevent form submission
       e.preventDefault();
       $('#thong_bao').empty();
@@ -54,7 +54,7 @@ export default class Catelory extends React.Component{
         console.log("yes");
           var url = 'https://script.google.com/macros/s/AKfycbzPEZPmNLtjrg4D6Ukopfo6OMQAnNgzOGmIQt1jtRjbgCePJmPH/exec';
 
-        var jqxhr = $.post(url, $('#form-dk').serialize(), function(data) {
+        var jqxhr = $.post(url, $('#formdk').serialize(), function(data) {
             grecaptcha.reset();
             captcha.style.display = "none";
             button_complete.style.display = "none";
@@ -96,12 +96,12 @@ export default class Catelory extends React.Component{
           <div className="col-sm-offset-4 col-sm-8 Catolary_Title_User">
             {Posts}
           </div>
-          <form method="POST" action="#" id="form-dk">
+          <form method="POST" action="#" id="formdk">
             <div className="col-sm-offset-4 col-sm-8  hidden-xs Catolary_from_register">
               <h4>Muốn đọc nhiều hơn nhưng bài viết hay từ Techkids?</h4>
               <p>Đăng ký theo dõi nhé!</p>
               <input type="Email" id="id_email" className="Scholarship_input" placeholder="Địa Chỉ Email..." name='Địa chỉ mail'/>
-              <button  id="submit_button"><span id="submit_text">Đăng Ký</span></button>
+              <button><span>Đăng Ký</span></button>
             </div>
           </form>
           <div id="myModal" className="modal">
