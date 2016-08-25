@@ -119,6 +119,7 @@ body{
 }
 #detail .Detail_content{
 	border-top: 1px solid #000000;
+  text-align: left;
 }
 #detail .Detail_content_in{
 	margin-top: 10px;
@@ -298,6 +299,11 @@ body{
 	font-size: 22px;
 	text-align: right;
 }
+#detail .Detail_catogory{
+  position: relative;
+  top:-45px;
+}
+
 
 
 }

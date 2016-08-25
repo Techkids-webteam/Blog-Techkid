@@ -11,7 +11,6 @@ export default class PageRecentCatolary extends React.Component{
           <div className="col-sm-offset-1 col-sm-3 text-right">
             <Catelory/>
           </div>
-
         </div>
 
     );

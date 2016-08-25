@@ -1,4 +1,5 @@
 import React from "react";
+import Catelory from "./../../Home/Catelory/Catelory";
 import Remarkable from  'remarkable'
 export default class Detail extends React.Component{
   constructor(){
@@ -19,37 +20,47 @@ export default class Detail extends React.Component{
     return (
         <div className="">
           <div className="row">
-            <div className="col-sm-12 text-left">
-                <h1>{this.props.title}</h1>
-                <p>{this.props.category} | {shortDate + " " + shortTime}</p>
+            <div className="col-sm-9 text-left">
+              <h1>{this.props.title}</h1>
+              <p>{this.props.category} | {shortDate + " " + shortTime}</p>
 
-                <div className="row">
-                  <div className="col-sm-6">
-                    <div className="row Detail_human">
-                      <div className="col-sm-2 ">
-                        <img src="../../images/circle.png"/>
-                      </div>
-                      <div className="col-sm-8 circle">
-                        <p>Được đăng bởi Quỳnh Như</p>
-                      </div>
+              <div className="row">
+
+                <div className="col-sm-6">
+                  <div className="row Detail_human">
+                    <div className="col-sm-2 ">
+                      <img src="../../images/circle.png"/>
                     </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="navbar list_socical ">
-                      <i className="fa fa-twitter twitter" aria-hidden="true"></i>
-                      <i className="fa fa-google-plus-official google" aria-hidden="true"></i>
-                      <i className="fa fa-facebook-square facebook" aria-hidden="true"></i>
+                    <div className="col-sm-8 circle">
+                      <p>Được đăng bởi Quỳnh Như</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="col-sm-12 Detail_content">
-                  <h2>{this.props.title}</h2>
-                  <img src={this.props.image_url}/>
-                  <p dangerouslySetInnerHTML={this.rawMarkup(this.props.content)}></p>
-                </div>
+                <div className="col-sm-4">
+                  <div className="navbar list_socical ">
+                    <i className="fa fa-twitter twitter" aria-hidden="true"></i>
+                    <i className="fa fa-google-plus-official google" aria-hidden="true"></i>
+                    <i className="fa fa-facebook-square facebook" aria-hidden="true"></i>
+                  </div>
+              </div>
+
+              </div>
             </div>
 
+            <div className="row">
+
+              <div className="col-sm-8 Detail_content">
+                <h2>{this.props.title}</h2>
+                <img src={this.props.image_url}/>
+                <p dangerouslySetInnerHTML={this.rawMarkup(this.props.content)}></p>
+              </div>
+
+              <div className="col-sm-offset-1 col-sm-3 text-right Detail_catogory">
+                <Catelory/>
+              </div>
+
+            </div>
           </div>
         </div>
 
