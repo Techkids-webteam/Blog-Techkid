@@ -96,9 +96,9 @@ export default class RecentPosts extends React.Component{
                   </Link>
                 </h3>
                 <p>
-                  {post.content.substring(0,200)}
+                  {post.content.substring(0,120)}
                 </p>
-                <ButtonFacebook/>
+                <ButtonFacebook post={post._id}/>
                 <p className="NewPost_category">{post.category} | {shortDate + " " + shortTime}</p>
               </div>
             </div>

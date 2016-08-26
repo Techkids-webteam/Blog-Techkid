@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Header from "./../../Home/header/Header";
 import BlogContentBlock from "./../BlogContentBlock/BlogContentBlock";
+import BlogContentBlockHome from "./../../Home/BlogContentBlock/BlogContentBlock";
 import HeaderMenu from "./../../Home/HeaderMenu/HeaderMenu";
 import PageRecentCatolary from "../PageRecentCatolary/PageRecentCatolary";
 import NewPost from "./../../Home/NewPost/NewPost";
@@ -21,15 +22,15 @@ export default class LayoutDetail extends React.Component{
     componentDidMount() {
       let id = this.props.params.id
       $.ajax({
-          type: 'GET',
-          url: 'http://techkids.vn:9196/api/blog/getBlog/'+ id, 
+          type  : 'GET',
+          url   : 'http://techkids.vn:9196/api/blog/getBlog/'+ id,
           cache : false,
           success: function(res){
             this.setState({
               post : res
             })
           }.bind(this),
-          error: function(err){ 
+          error: function(err){
             console.log(err)
           }.bind(this)
       })
@@ -40,33 +41,32 @@ export default class LayoutDetail extends React.Component{
       let id = nextProps.params.id
       $.ajax({
           type: 'GET',
-          url: 'http://techkids.vn:9196/api/blog/getBlog/'+ id, 
+          url: 'http://techkids.vn:9196/api/blog/getBlog/'+ id,
           cache : false,
           success: function(res){
             this.setState({
               post : res
             })
           }.bind(this),
-          error: function(err){ 
+          error: function(err){
             console.log(err)
           }.bind(this)
       })
     }
 
-  
+
   render() {
     return (
       <div id="detail">
         <Header/>
         <HeaderMenu/>
         <BlogContentBlock><PageRecentCatolary post = {this.state.post}/></BlogContentBlock>
-        <BlogContentBlock><NewPost/></BlogContentBlock>
-        <BlogContentBlock background="white_bg"><Footer/></BlogContentBlock>
+        <BlogContentBlockHome><NewPost/></BlogContentBlockHome>
+        <Footer/>
         <Scholarship/>
         <ScrollToTop/>
-        
+
       </div>
     );
   }
 }
-

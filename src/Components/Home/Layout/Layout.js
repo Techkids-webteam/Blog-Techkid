@@ -12,6 +12,9 @@ import Scholarship from "./../Scholarship/Scholarship";
 
 
 export default class Layout extends React.Component{
+
+
+
   render() {
     return (
       <div id="home">
@@ -19,7 +22,7 @@ export default class Layout extends React.Component{
         <HeaderMenu/>
         <BlogContentBlock><Title/></BlogContentBlock>
         <BlogContentBlock><NewPost/></BlogContentBlock>
-        <BlogContentBlock><PageRecentCatolary/></BlogContentBlock>
+        <BlogContentBlock><PageRecentCatolary /></BlogContentBlock>
         <Footer/>
         <Scholarship/>
         <ScrollToTop/>

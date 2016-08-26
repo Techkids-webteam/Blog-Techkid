@@ -4,9 +4,9 @@ import { IndexLink, Link, withRouter } from "react-router";
 export default class NewPost extends React.Component{
   constructor(){
     super();
-    this.state = {
-      blog: []
-    }
+    this.state = ({
+      blog:[],
+    })
   }
 
   componentDidMount(){
@@ -42,8 +42,9 @@ export default class NewPost extends React.Component{
           arrows:false
         }
       }]
-    });
+    })
   }
+
 
   render(){
     var date ;
@@ -59,15 +60,14 @@ export default class NewPost extends React.Component{
             <div className="col-sm-12 NewPost_content_title">
                   <Link to={`/layoutDetail/${post._id}`}><img src={post.image_url}/></Link>
                   <h3>
-                  <Link to={`/layoutDetail/${post._id}`}>{post.title}</Link>
+                  <Link to={`/layoutDetail/${post._id}`}>{post.title.substring(0,76)}</Link>
                   </h3>
                   <p>
-                    {post.content.substring(0,200)}
+                    {post.content.substring(0,120)}
                   </p>
-                  <ButtonFacebook/>
+                  <ButtonFacebook post={post._id}/>
                   <p className="NewPost_category">{post.category} | {shortDate + " " + shortTime}</p>
             </div>
-
           </div>
       )
     })
