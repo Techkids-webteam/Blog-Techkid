@@ -97,12 +97,12 @@ body{
 #catogory .RecentPosts_Title_img{
 	border-bottom: 1px solid #00a1ed;
 }
-#catogory .RecentPosts_Title_content{
+.RecentPosts_Title_content{
 	margin-top: 50px;
+  display: inline-block;
 }
-#catogory .RecentPosts{
-  text-align: left;
-}
+
+
 #catogory #pagination{
   cursor: pointer;
 }
@@ -139,19 +139,13 @@ body{
 #catogory .RecentPosts_Title_img_mobile img {
 	margin-left: 15px;
 }
-#catogory .RecentPosts_Title_content{
-  display: inline-block;
-  float: none;
-}
-
-#catogory .RecentPosts_Title_content_img a img{
-	max-width: 100%;
-}
 
 #catogory .RecentPosts_Title_img_mobile{
 	border-bottom: 1px solid #00a1ed;
 }
-
+.RecentPosts_Title_content_img {
+  list-style:none;
+}
 footer.footer{
 	margin-top: 65px;
 	font-size: 1.4rem;

@@ -6,7 +6,7 @@ export default class Footer extends React.Component{
           <footer className="footer">
             <div className="container-fluid container">
                 <div className="row">
-                    <div className="col-sm-3">
+                    <div className="col-sm-3 text-center">
                         <a href="#"><img src="../images/logo.png" className ="footer_logo"/></a>
                         <div className="row socials_list">
                             <a href="https://plus.google.com/u/2/" className="fa fa-google-plus-square col-sm-offset-2 col-sm-2"></a>

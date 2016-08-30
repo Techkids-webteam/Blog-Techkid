@@ -1,4 +1,5 @@
 import React from "react";
+import RegisterDowCategory from "../RegisterDowCategory/RegisterDowCategory";
 import { IndexLink, Link, withRouter } from "react-router";
 
 export default class Catelory extends React.Component{
@@ -46,21 +47,7 @@ export default class Catelory extends React.Component{
           <div className="col-sm-12 Catolary_Title_User">
             {Posts}
           </div>
-          <form method="POST" action="#" id="formdk">
-            <div className="col-sm-12  hidden-xs Catolary_from_register">
-              <h4>Muốn đọc nhiều hơn nhưng bài viết hay từ Techkids?</h4>
-              <p>Đăng ký theo dõi nhé!</p>
-              <input type="Email" id="id_email" className="Scholarship_input" placeholder="Địa Chỉ Email..." name='Địa chỉ mail'/>
-              <button><span>Đăng Ký</span></button>
-            </div>
-          </form>
-          <div id="myModal" className="modal">
-            <div className="modal-content">
-              <p className="modal-title opensans" id="thong_bao"></p>
-              <div className="g-recaptcha" data-sitekey="6LemYygTAAAAALoCU-8mgkR5E5EVM3NLgkGdBOoB" id="rcaptcha"></div>
-              <button id="compelete" className="btn per">Hoàn thành</button>
-            </div>
-          </div>
+          <RegisterDowCategory/>
       </div>
     );
   }
