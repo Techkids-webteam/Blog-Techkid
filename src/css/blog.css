@@ -25,7 +25,7 @@ body{
   width: auto;
 }
 .Header {
-  padding-right: 60px;
+  padding-right: 150px;
 }
 
 #home .header_icon{
@@ -65,8 +65,8 @@ body{
 	background: #ffffff;
 }
 
-#home .Home_Title{
-	margin-top: 50px;
+.Home_Title{
+	margin-top: 130px;
 }
 #home .Home_Title h1{
 	font-weight: 800;
@@ -129,7 +129,7 @@ body{
 #home #pagination{
   cursor: pointer;
 }
-#home .Catolary_Title_User{
+.Catolary_Title_User{
 	border-top: 1px solid #00a1ed;
 	padding: 10px 30px;
 	max-width: 100%;
