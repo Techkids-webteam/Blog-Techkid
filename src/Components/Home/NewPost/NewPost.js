@@ -29,9 +29,7 @@ export default class NewPost extends React.Component{
       dots: false,
       infinite: false,
       arrows:false,
-      //        centerMode: true,
       slidesToShow: 3 ,
-      //        slidesToScroll: 1
       responsive: [{
         breakpoint: 768,
         settings: {
@@ -60,7 +58,7 @@ export default class NewPost extends React.Component{
             <div className="col-sm-12 NewPost_content_title">
                   <Link to={`/layoutDetail/${post._id}`}><img src={post.image_url}/></Link>
                   <h3>
-                  <Link to={`/layoutDetail/${post._id}`}>{post.title.substring(0,76)}</Link>
+                  <Link to={`/layoutDetail/${post._id}`}>{post.title.substring(0,65)}</Link>
                   </h3>
                   <p>
                     {post.content.substring(0,120)}
