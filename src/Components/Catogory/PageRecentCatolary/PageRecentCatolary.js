@@ -8,12 +8,8 @@ export default class PageRecentCatolary extends React.Component{
       post: []
     })
   }
-  componentWillReceiveProps(nextProps) {
-    console.log(nextProps)
-    this.setState({
-      post : nextProps.post
-    })
-  }
+
+
 
 
   render(){

@@ -16,21 +16,21 @@ export default class RecentPosts extends React.Component{
         shortTime = date.toLocaleTimeString().toLowerCase().replace(/([\d]+:[\d]+):[\d]+(\s\w+)/g, "$1$2");
         shortDate = (date.getMonth() + 1) + "-" +  date.getDate() + "-" +  date.getFullYear();
         return (
-              <div  className="col-sm-6 RecentPosts_Title_content"  key={post._id}>
-                <div className="RecentPosts_Title_content_img">
-                  <Link to={`/layoutDetail/${post._id}`}><img src={post.image_url}/></Link>
-                  <h3>
-                    <Link to={`/layoutDetail/${post._id}`}>
-                      {post.title.substring(0,76) + "..."}
-                    </Link>
-                  </h3>
-                  <p>
-                    {post.content.substring(0,121)}
-                  </p>
-                  <ButtonFacebook post={post._id}/>
-                  <p className="NewPost_category">{post.category} | {shortDate + " " + shortTime}</p>
-                </div>
-              </div>
+              <ul  className="col-sm-6 RecentPosts_Title_content"  key={post._id}>
+                <li className="RecentPosts_Title_content_img">
+                    <Link to={`/layoutDetail/${post._id}`}><img src={post.image_url}/></Link>
+                    <h3>
+                      <Link to={`/layoutDetail/${post._id}`}>
+                        {post.title.substring(0,70) + "..."}
+                      </Link>
+                    </h3>
+                    <p>
+                      {post.content.substring(0,100)}
+                    </p>
+                    <ButtonFacebook post={post._id}/>
+                    <p className="NewPost_category">{post.category} | {shortDate + " " + shortTime}</p>
+                </li>
+              </ul>
             )
          })
     return(
