@@ -9,7 +9,7 @@ export default class Pagination extends React.Component{
   }
 
   render () {
-    var Posts = this.props.listPage.map((item,index) =>{
+    var Posts = this.props.post.map((item,index) =>{
       return (
           <li key={index} className={this.props.page == parseInt(item) ? "active" : ""}><a onClick={this.props.HandPageClick.bind(null,item)}>{item}</a></li>
         )
