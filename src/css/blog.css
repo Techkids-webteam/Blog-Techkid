@@ -25,7 +25,7 @@ body{
   width: auto;
 }
 .Header {
-  padding-right: 150px;
+  padding-right: 60px;
 }
 
 #home .header_icon{
@@ -437,7 +437,7 @@ footer.footer{
   margin-right: 0;
 }
 #home .header_menu_list{
-	padding-left: 60px;
+	padding-left: 140px;
 	font-size: 1.8rem;
 }
 .header_menu_list ul li a{
