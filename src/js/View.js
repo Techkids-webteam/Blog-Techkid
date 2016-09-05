@@ -10,6 +10,6 @@ ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Layout}></Route>
     <Route path="layoutDetail/:id" name="layoutDetail" component={LayoutDetail}></Route>
-    <Route path="layoutCategory/:category" name="layoutCategory" component={LayoutCategory}></Route>
+    <Route path="layoutCategory/:category/:number" name="layoutCategory" component={LayoutCategory}></Route>
 </Router>,
 content);

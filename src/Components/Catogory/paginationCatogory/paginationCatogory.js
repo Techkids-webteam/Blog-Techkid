@@ -1,7 +1,6 @@
 import React from "react";
 import { IndexLink, Link, withRouter } from "react-router";
 
-
 export default class Pagination extends React.Component{
 
   constructor(props) {
@@ -9,7 +8,7 @@ export default class Pagination extends React.Component{
   }
 
   render () {
-    var Posts = this.props.post.map((item,index) =>{
+    var Posts = this.props.TotalPage.map((item,index) =>{
       return (
           <li key={index} className={this.props.page == parseInt(item) ? "active" : ""}><a onClick={this.props.HandPageClick.bind(null,item)}>{item}</a></li>
         )

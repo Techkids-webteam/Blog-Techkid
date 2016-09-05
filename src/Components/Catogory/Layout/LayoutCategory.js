@@ -20,15 +20,16 @@ export default class LayoutCategory extends React.Component{
 
   componentDidMount() {
     let category = this.props.params.category;
+    let number = this.props.params.number;
     console.log("category"+category);
     $.ajax({
         type    : 'GET',
-        url     : 'http://techkids.vn:9196/api/blog/getBlogsByCategory/' + category,
+        url:  'http://techkids.vn:9196/api/blog/getBlogsByCategory/' + category +"/"+ number,
         cache   : false,
         success : function(res){
           console.log(res)
           this.setState({
-            post : res
+            post : res.items
           })
         }.bind(this),
         error: function(err){
@@ -38,14 +39,15 @@ export default class LayoutCategory extends React.Component{
   }
   componentWillReceiveProps(nextProps){
     console.log("Update" + nextProps.params.id);
-    let category = nextProps.params.category
+    let category = nextProps.params.category;
+    let number = nextProps.params.number
     $.ajax({
         type: 'GET',
-        url:  'http://techkids.vn:9196/api/blog/getBlogsByCategory/' + category,
+        url:  'http://techkids.vn:9196/api/blog/getBlogsByCategory/' + category +"/"+number,
         cache : false,
         success: function(res){
           this.setState({
-            post : res
+            post : res.items
           })
         }.bind(this),
         error: function(err){

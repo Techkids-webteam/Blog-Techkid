@@ -30,7 +30,7 @@ export default class Catelory extends React.Component{
 
       return (
           <div key={post._id} className="catogory" >
-            <p><Link  to={`/layoutCategory/${post.title}`}>{post.title}</Link></p>
+            <p><Link  to={`/layoutCategory/${post.title}/1`}>{post.title}</Link></p>
           </div>
       )
     })

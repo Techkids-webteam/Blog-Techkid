@@ -9,7 +9,7 @@ export default class RecentPosts extends React.Component{
     super(props);
     this.state = {
       page      : 1,
-      TotalPage : 1
+      TotalPage : [],
     }
     this.next     = this.next.bind(this)
     this.previous = this.previous.bind(this)
@@ -17,13 +17,13 @@ export default class RecentPosts extends React.Component{
   HandPageClick(number){
     $.ajax({
       type   : 'GET',
-      url    : this.props.post + number,
+      url    : this.props.post +"/"+ number,
       cache  : false,
       success: function(res){
         console.log(res);
         this.setState({
-          post: res,
-          page: number
+          TotalPage : res,
+          page      : number
         })
       }.bind(this),
       error: function(err){
@@ -41,6 +41,7 @@ export default class RecentPosts extends React.Component{
     if( number < 1 ) number = 1
     this.HandPageClick(number);
   }
+
   render(){
     var date ;
     var shortTime ;
@@ -85,8 +86,7 @@ export default class RecentPosts extends React.Component{
           HandPageClick={this.HandPageClick.bind(this)}
           page={this.state.page}
           next={this.next}
-          previous={this.previous}
-          />
+          previous={this.previous}/>
       </div>
      )
   }
